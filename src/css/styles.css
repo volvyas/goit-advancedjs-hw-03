@@ -27,7 +27,7 @@
 
 .gallery-item {
   max-width: 360px;
-  width: calc(100% / 3);
+
   border: 1px solid #808080;
   font-family: Montserrat;
   font-weight: 600;
@@ -36,6 +36,18 @@
   line-height: 16px;
   letter-spacing: 0.04em;
   color: #2e2f42;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery-item {
+    width: calc(100% / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery-item {
+    width: calc(100% / 3);
+  }
 }
 
 .gallery-image {
@@ -95,12 +107,12 @@
   align-items: center;
   gap: 28px;
   margin-top: 4px;
+  text-align: center;
 }
 
 .social-count {
   font-family: Montserrat;
   font-weight: 400;
-  font-style: Regular;
   font-size: 12px;
   line-height: 24px;
   letter-spacing: 0.04em;
